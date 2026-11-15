@@ -66,7 +66,7 @@
     drawChart(i);
   }
   function drawChart(sel){
-    var svg=$('chart'),W=520,H=340,L=56,R=20,T=24,B=48,xmin=2,xmax=6,ymin=0,ymax=0.45;
+    var svg=$("chart"),W=520,H=430,L=56,R=20,T=24,B=48,xmin=2,xmax=6,ymin=0,ymax=0.45;
     function x(c){return L+(Math.log10(c)-xmin)/(xmax-xmin)*(W-L-R)}
     function y(v){return T+(1-(v-ymin)/(ymax-ymin))*(H-T-B)}
     var s='',M='font-family="IBM Plex Mono,monospace" font-size="11" fill="#8FB2C8"';
@@ -81,13 +81,16 @@
     s+='<text x="'+(W-R)+'" y="'+(H-6)+'" text-anchor="end" '+M+'>'+t('day')+'</text>';
     s+='<text x="'+L+'" y="14" '+M+'>kWh/m³</text>';
     var pts=D.cap.map(function(c,i){return x(c)+','+y(D.kwh[i])});
-    s+='<path d="M'+x(D.cap[0])+','+y(0)+' L'+pts.join(' L')+' L'+x(D.cap[12])+','+y(0)+' Z" fill="#9DDCFF" fill-opacity=".12"/>';
-    s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="#9DDCFF" stroke-width="2.5" stroke-linejoin="round"/>';
-    D.cap.forEach(function(c,i){s+='<circle cx="'+x(c)+'" cy="'+y(D.kwh[i])+'" r="3" fill="#0E3550" stroke="#9DDCFF" stroke-width="1.5"/>'});
+    s='<defs><linearGradient id="kline" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#FF8A7A"/><stop offset=".45" stop-color="#FFC46B"/><stop offset="1" stop-color="#6EE7A8"/></linearGradient>'
+      +'<linearGradient id="karea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#6EE7A8" stop-opacity=".28"/><stop offset="1" stop-color="#6EE7A8" stop-opacity="0"/></linearGradient></defs>'+s;
+    s+='<path d="M'+x(D.cap[0])+','+y(0)+' L'+pts.join(' L')+' L'+x(D.cap[12])+','+y(0)+' Z" fill="url(#karea)"/>';
+    s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="url(#kline)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>';
+    D.cap.forEach(function(c,i){s+='<circle cx="'+x(c)+'" cy="'+y(D.kwh[i])+'" r="3" fill="#0E3550" stroke="#CFE3F0" stroke-opacity=".7" stroke-width="1.3"/>'});
     var sx=x(D.cap[sel]),sy=y(D.kwh[sel]),tx=Math.min(Math.max(sx,L+40),W-R-40);
-    s+='<line x1="'+sx+'" x2="'+sx+'" y1="'+sy+'" y2="'+(H-B)+'" stroke="#FFFFFF" stroke-opacity=".5" stroke-dasharray="3 4"/>';
-    s+='<circle cx="'+sx+'" cy="'+sy+'" r="7" fill="#FFFFFF"/>';
-    s+='<text x="'+tx+'" y="'+(sy-16)+'" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">'+fmt(D.kwh[sel],2)+'</text>';
+    s+='<line x1="'+sx+'" x2="'+sx+'" y1="'+sy+'" y2="'+(H-B)+'" stroke="#FFFFFF" stroke-opacity=".45" stroke-dasharray="3 4"/>';
+    s+='<circle cx="'+sx+'" cy="'+sy+'" r="11" fill="#6EE7A8" fill-opacity=".25"/><circle cx="'+sx+'" cy="'+sy+'" r="6.5" fill="#FFFFFF" stroke="#6EE7A8" stroke-width="3"/>';
+    s+='<rect x="'+(tx-30)+'" y="'+(sy-42)+'" width="60" height="24" rx="12" fill="#6EE7A8"/>';
+    s+='<text x="'+tx+'" y="'+(sy-25)+'" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="700" font-size="14" fill="#0A2A40">'+fmt(D.kwh[sel],2)+'</text>';
     svg.innerHTML=s;
   }
   if(slider)slider.addEventListener('input',renderScale);

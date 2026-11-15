@@ -28,8 +28,9 @@
 
 <nav class="nav" aria-label="Main navigation">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="../assets/img/logo.png" alt="" width="34" height="25">NOVETECH</a>
-    <ul id="menu"><li><a href="technologia.html">Technology</a></li><li><a href="produkt.html">Product</a></li><li><a href="projekt.html">Project & scale</a></li><li><a href="investori.html" aria-current="page">Investors</a></li><li><a href="kontakt.html">Contact</a></li></ul>
+    <a class="brand" href="index.html"><img src="../assets/img/logo-light.png" alt="" width="34" height="25">NOVETECH</a>
+    <ul id="menu"><li><a href="technologia.html">Technology</a></li><li><a href="produkt.html">Product</a></li><li><a href="projekt.html">Project & scale</a></li><li class="nav-inv"><a href="investori.html" aria-current="page">Investors</a></li><li><a href="kontakt.html">Contact</a></li></ul>
+    <span class="nav-sep" aria-hidden="true"></span>
     <div class="lang-dd" id="lang-dd">
       <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Language">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9M12 3C9.4 5.6 8.2 8.6 8.2 12s1.2 6.4 3.8 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
@@ -44,7 +45,7 @@
       </ul>
     </div>
     <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
-    <a class="btn btn-sky" href="investori.html">Investors</a>
+    <a class="btn btn-sky nav-cta" href="investori.html" aria-current="page">Investors<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 </nav>
 
@@ -70,11 +71,27 @@
   <div class="wrap">
     <div class="inv-h"><p class="eyebrow">Why now</p><h2>EU legislation sets binding deadlines for treatment plants.</h2></div>
     <ol class="reg"><li class=""><span class="r-year num">2025</span><span class="r-dot" aria-hidden="true"></span><small>1 Jan 2025</small><h3>Directive (EU) 2024/3019 enters into force</h3><p>New urban wastewater rules, including plant energy audits every 4 years.</p></li><li class="now"><span class="r-year num">2027</span><span class="r-dot" aria-hidden="true"></span><small>31 Jul 2027</small><h3>Transposition into Slovak law</h3><p>Obligations start to apply to Slovak plant operators.</p></li><li class=""><span class="r-year num">2030</span><span class="r-dot" aria-hidden="true"></span><small>2030</small><h3>Fit for 55: −55 % emissions</h3><p>The EU climate target versus 1990. Methane and nitrous oxide from wastewater plants are among the tracked sources.</p></li><li class="end"><span class="r-year num">2045</span><span class="r-dot" aria-hidden="true"></span><small>2045</small><h3>Energy-neutral plants</h3><p>Plants from 10,000 p.e. must cover energy from their own renewables, with interim milestones.</p></li></ol>
-    <ul class="also">
-      <li><b>Slovak Waste Act No. 79/2015</b> – recovery takes priority over disposal</li>
-      <li><b>Phosphorus</b> – phosphate rock is on the EU critical raw materials list</li>
-      <li><b>EU Circular Economy Action Plan</b> – integrated nutrient management</li>
-    </ul>
+    <h3 class="pillars-h">Further legal and strategic pillars</h3>
+    <div class="pillars">
+      <article class="pillar p-waste">
+        <span class="p-ic" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 9h20M12 9V6h8v3M8 9l1.6 18h12.8L24 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M13 15l3 3 4-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p class="p-tag">Act No. 79/2015 Coll., § 4</p>
+        <h3>The waste hierarchy</h3>
+        <p>The Slovak Waste Act gives priority to waste recovery over disposal by landfill or incineration. The technology recovers sewage sludge as material into a product and so meets a higher level of this hierarchy.</p>
+      </article>
+      <article class="pillar p-phos">
+        <span class="p-ic" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3l11 6.5v13L16 29 5 22.5v-13z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><text x="16" y="21" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800" font-size="12" fill="currentColor">P</text></svg></span>
+        <p class="p-tag">Regulation (EU) 2024/1252</p>
+        <h3>Phosphorus is an EU critical raw material</h3>
+        <p>The Critical Raw Materials Act lists phosphate rock and phosphorus as critical raw materials. Europe imports almost all of them. Every tonne of product returns 31.8 kg of phosphorus to the soil from a domestic source.</p>
+      </article>
+      <article class="pillar p-circ">
+        <span class="p-ic" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M25 12a10 10 0 0 0-17.5-3.5M7 20a10 10 0 0 0 17.5 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M7 4v5h5M25 28v-5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p class="p-tag">EU Circular Economy Action Plan</p>
+        <h3>A closed nutrient loop</h3>
+        <p>The action plan provides for integrated nutrient management and for replacing primary raw materials with secondary ones. Nutrients from sludge return to agriculture instead of going to landfill.</p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -108,7 +125,7 @@
 <footer>
   <div class="wrap foot-grid">
     <div class="f-brand">
-      <a class="brand" href="index.html"><img src="../assets/img/logo.png" alt="" width="28" height="20">NOVETECH</a>
+      <a class="brand" href="index.html"><img src="../assets/img/logo-light.png" alt="" width="28" height="20">NOVETECH</a>
       <p>Enzyme-cavitation valorisation of sewage sludge without greenhouse gas emissions.</p>
     </div>
     <nav class="f-col" aria-label="Footer">
