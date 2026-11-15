@@ -475,7 +475,20 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(-
 .vid-head .eyebrow{color:var(--navy);margin-bottom:10px}
 .vid{width:100%;height:auto;border-radius:18px;background:var(--deep);box-shadow:0 30px 60px -30px rgba(6,22,34,.6);display:block}
 
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
+.contact .grid{align-items:start}
+.contact-info{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px;display:block}
+.contact-info>.eyebrow{margin:0 0 8px}
+.contact-info .mail{font-size:clamp(22px,2.2vw,28px);display:inline-block}
+.operator{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+.operator .eyebrow{margin:0 0 8px}
+.contact-info .op-name{margin:0 0 10px;font-size:22px}
+.op-addr{font-style:normal;font-size:16px;line-height:1.6;color:var(--ink)}
+.operator dl.op-ids{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0 0}
+.operator dl.op-ids div{display:block}
+.op-ids dt{font:500 12px var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.op-ids dd{margin:0;font-size:16px;color:var(--ink)}
+.contact-info .op-note{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);font-size:14px}
 
 /* ---------- nutrient cycle ---------- */
 .prod-grid>.bars{grid-row:1 / span 2}
