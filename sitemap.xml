@@ -1,9 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://novetech.eu/</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://novetech.eu/technologia.html</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://novetech.eu/produkt.html</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://novetech.eu/projekt.html</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://novetech.eu/investori.html</loc><lastmod>2026-11-15</lastmod></url>
-  <url><loc>https://novetech.eu/kontakt.html</loc><lastmod>2026-11-15</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://novetech.eu/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/"/>
+  </url>
+  <url><loc>https://novetech.eu/technologia.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/technologia.html"/>
+  </url>
+  <url><loc>https://novetech.eu/produkt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/produkt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/projekt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/projekt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/investori.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/investori.html"/>
+  </url>
+  <url><loc>https://novetech.eu/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/"/>
+  </url>
+  <url><loc>https://novetech.eu/en/technologia.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/technologia.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/produkt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/produkt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/projekt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/projekt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/investori.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/investori.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/de/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/"/>
+  </url>
+  <url><loc>https://novetech.eu/de/technologia.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/technologia.html"/>
+  </url>
+  <url><loc>https://novetech.eu/de/produkt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/produkt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/de/projekt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/projekt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/de/investori.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/investori.html"/>
+  </url>
+  <url><loc>https://novetech.eu/de/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/technologia.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/technologia.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/technologia.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/produkt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/produkt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/produkt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/projekt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/projekt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/projekt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/investori.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/investori.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/investori.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
 </urlset>

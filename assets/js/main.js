@@ -16,29 +16,17 @@
     role:{sk:'Záujem: ',en:'Interest: ',de:'Interesse: ',pl:'Zainteresowanie: '}
   };
   function t(k){return TXT[k][lang()]||TXT[k].en}
-  function setLang(l){
-    if(LANGS.indexOf(l)<0)l='sk';
-    root.setAttribute('data-lang',l);root.lang=l;
-    LANGS.forEach(function(x){var b=$('lang-'+x);if(b)b.setAttribute('aria-pressed',x===l)});
-    if($('lang-cur'))$('lang-cur').textContent=l.toUpperCase();
-    try{localStorage.setItem('nt-lang',l)}catch(e){}
-    var tm=document.querySelector('meta[name="nt-title-'+l+'"]');
-    if(tm)document.title=tm.content;
-    document.querySelectorAll('option[data-en]').forEach(function(o){if(!o.dataset.sk)o.dataset.sk=o.textContent;o.textContent=o.dataset[l]||o.dataset.sk});
-    if(slider)renderScale();
-  }
   var lbtn=$('lang-btn'),lmenu=$('lang-menu');
   function langMenu(open){if(!lbtn)return;lbtn.setAttribute('aria-expanded',open);lmenu.classList.toggle('open',open);
-    if(open){var cur=lmenu.querySelector('[aria-pressed="true"]');if(cur)cur.focus()}}
+    if(open){var cur=lmenu.querySelector('[aria-current="true"]');if(cur)cur.focus()}}
   if(lbtn){
     lbtn.addEventListener('click',function(e){e.stopPropagation();langMenu(lbtn.getAttribute('aria-expanded')!=='true')});
     document.addEventListener('click',function(e){if(!$('lang-dd').contains(e.target))langMenu(false)});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lbtn.getAttribute('aria-expanded')==='true'){langMenu(false);lbtn.focus()}});
     lmenu.addEventListener('keydown',function(e){if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')return;e.preventDefault();
-      var it=[].slice.call(lmenu.querySelectorAll('button')),i=it.indexOf(document.activeElement);
+      var it=[].slice.call(lmenu.querySelectorAll('a')),i=it.indexOf(document.activeElement);
       it[(i+(e.key==='ArrowDown'?1:it.length-1))%it.length].focus()});
   }
-  LANGS.forEach(function(x){var b=$('lang-'+x);if(b)b.onclick=function(){setLang(x);langMenu(false);if(lbtn)lbtn.focus()}});
 
   /* ---------- mobile menu ---------- */
   var mb=$('menu-btn'),menu=$('menu');
@@ -104,8 +92,7 @@
   }
   if(slider)slider.addEventListener('input',renderScale);
 
-  var saved='sk';try{saved=localStorage.getItem('nt-lang')||'sk'}catch(e){}
-  setLang(saved);
+  if(slider)renderScale();
 
   /* ---------- lightbox ---------- */
   var lb=$('lb');
