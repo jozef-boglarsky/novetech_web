@@ -1,0 +1,19 @@
+# NOVETECH – hlavná doména novetech.eu
+# Všetky ostatné adresy (novetech.sk, www, http) sa trvalo presmerujú na https://novetech.eu
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^novetech\.eu$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://novetech.eu/$1 [R=301,L]
+
+# Bez prípony .html nie je potrebné nič meniť; index.html je úvodná stránka
+DirectoryIndex index.html
+
+# Cache pre obrázky, CSS a JS
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
