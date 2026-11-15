@@ -21,9 +21,7 @@
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -116,6 +114,33 @@
     </div>
   </div>
 </section>
+
+<section class="calc" id="kalkulacka">
+  <span class="stage" aria-hidden="true">03</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Kalkulačka úspor</p>
+        <h2>Koľko môže ušetriť vaša čistiareň?</h2>
+      </div>
+      <p>Zadajte údaje svojej čistiarne odpadových vôd. Výpočet porovná súčasnú spotrebu energie a náklady na likvidáciu kalu s enzýmo-kavitačnou technológiou.</p>
+    </div>
+    <div class="calc-grid">
+      <form class="calc-form" id="calc-form" onsubmit="return false"><div class="cf"><label for="c-cap">Kapacita čistiarne</label><div class="cf-in"><input type="number" id="c-cap" value="10000" min="100" max="1000000" step="100" inputmode="decimal"><span class="cf-u">m³/deň</span></div><small>objem vyčistenej odpadovej vody</small></div><div class="cf"><label for="c-cur">Súčasná spotreba energie</label><div class="cf-in"><input type="number" id="c-cur" value="0.9" min="0.2" max="2" step="0.05" inputmode="decimal"><span class="cf-u">kWh/m³</span></div><small>bežne 0,6 – 1,2 kWh/m³</small></div><div class="cf"><label for="c-price">Cena elektriny</label><div class="cf-in"><input type="number" id="c-price" value="0.18" min="0.05" max="0.6" step="0.01" inputmode="decimal"><span class="cf-u">€/kWh</span></div><small>vrátane distribúcie</small></div><div class="cf"><label for="c-sludge">Kal na likvidáciu</label><div class="cf-in"><input type="number" id="c-sludge" value="2500" min="0" max="200000" step="50" inputmode="decimal"><span class="cf-u">t/rok</span></div><small>odvodnený kal za rok</small></div><div class="cf"><label for="c-disp">Cena likvidácie kalu</label><div class="cf-in"><input type="number" id="c-disp" value="60" min="0" max="300" step="5" inputmode="decimal"><span class="cf-u">€/t</span></div><small>odvoz, skládka alebo spálenie</small></div></form>
+      <div class="calc-out" aria-live="polite">
+        <p class="eyebrow">Odhad ročnej úspory</p>
+        <div class="co-total"><b class="num" id="co-total">–</b><span>€ ročne</span></div>
+        <dl class="co-list">
+          <div class="co-e"><dt>Úspora elektriny</dt><dd><b class="num" id="co-mwh">–</b> MWh · <b class="num" id="co-eur-e">–</b> €</dd></div>
+          <div class="co-s"><dt>Odpadá likvidácia kalu</dt><dd><b class="num" id="co-t">–</b> t · <b class="num" id="co-eur-s">–</b> €</dd></div>
+          <div class="co-k"><dt>Spotreba s technológiou NOVETECH</dt><dd><b class="num" id="co-kwh">–</b> kWh/m³</dd></div>
+        </dl>
+        <p class="co-note">Orientačný výpočet. Nezahŕňa investičné náklady, prevádzkové náklady linky ani príjem z predaja produktu. Spotreba technológie vychádza z technických parametrov typizovaných modulových blokov pre zadanú kapacitu.</p>
+        <a class="btn btn-sky" href="kontakt.html">Chcem presnú kalkuláciu →</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <div class="next"><div class="wrap"><a href="investori.html"><span><small>Ďalej</small><b>Pre investorov</b></span><span class="arr" aria-hidden="true">→</span></a></div></div>
 
@@ -127,7 +152,7 @@
     </div>
     <nav class="f-col" aria-label="Pätička">
       <h2>Stránky</h2>
-      <a href="technologia.html">Technológia</a><a href="produkt.html">Produkt</a><a href="projekt.html">Projekt a kapacity</a><a href="investori.html">Pre investorov</a><a href="kontakt.html">Kontakt</a>
+      <a href="technologia.html">Technológia</a><a href="produkt.html">Produkt</a><a href="projekt.html">Projekt a kapacity</a><a href="investori.html">Pre investorov</a><a href="kontakt.html">Kontakt</a><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>
     </nav>
     <div class="f-col f-company">
       <h2>Prevádzkovateľ</h2>

@@ -36,6 +36,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
   </url>
+  <url><loc>https://novetech.eu/ochrana-osobnych-udajov.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/ochrana-osobnych-udajov.html"/>
+  </url>
   <url><loc>https://novetech.eu/en/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
@@ -71,6 +77,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/en/ochrana-osobnych-udajov.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/ochrana-osobnych-udajov.html"/>
   </url>
   <url><loc>https://novetech.eu/de/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
@@ -108,6 +120,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
   </url>
+  <url><loc>https://novetech.eu/de/ochrana-osobnych-udajov.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/ochrana-osobnych-udajov.html"/>
+  </url>
   <url><loc>https://novetech.eu/pl/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/"/>
@@ -143,5 +161,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/kontakt.html"/>
+  </url>
+  <url><loc>https://novetech.eu/pl/ochrana-osobnych-udajov.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://novetech.eu/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://novetech.eu/en/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://novetech.eu/de/ochrana-osobnych-udajov.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://novetech.eu/pl/ochrana-osobnych-udajov.html"/>
   </url>
 </urlset>

@@ -21,9 +21,7 @@
 <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="../assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -116,6 +114,33 @@
     </div>
   </div>
 </section>
+
+<section class="calc" id="kalkulacka">
+  <span class="stage" aria-hidden="true">03</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Kalkulator oszczędności</p>
+        <h2>Ile może zaoszczędzić Twoja oczyszczalnia?</h2>
+      </div>
+      <p>Wprowadź dane swojej oczyszczalni ścieków. Obliczenie porównuje obecne zużycie energii i koszty unieszkodliwiania osadów z technologią enzymatyczno-kawitacyjną.</p>
+    </div>
+    <div class="calc-grid">
+      <form class="calc-form" id="calc-form" onsubmit="return false"><div class="cf"><label for="c-cap">Wydajność oczyszczalni</label><div class="cf-in"><input type="number" id="c-cap" value="10000" min="100" max="1000000" step="100" inputmode="decimal"><span class="cf-u">m³/dobę</span></div><small>objętość oczyszczonych ścieków</small></div><div class="cf"><label for="c-cur">Obecne zużycie energii</label><div class="cf-in"><input type="number" id="c-cur" value="0.9" min="0.2" max="2" step="0.05" inputmode="decimal"><span class="cf-u">kWh/m³</span></div><small>zwykle 0,6–1,2 kWh/m³</small></div><div class="cf"><label for="c-price">Cena energii elektrycznej</label><div class="cf-in"><input type="number" id="c-price" value="0.18" min="0.05" max="0.6" step="0.01" inputmode="decimal"><span class="cf-u">€/kWh</span></div><small>łącznie z dystrybucją</small></div><div class="cf"><label for="c-sludge">Osad do unieszkodliwienia</label><div class="cf-in"><input type="number" id="c-sludge" value="2500" min="0" max="200000" step="50" inputmode="decimal"><span class="cf-u">t/rok</span></div><small>odwodniony osad rocznie</small></div><div class="cf"><label for="c-disp">Koszt unieszkodliwiania osadu</label><div class="cf-in"><input type="number" id="c-disp" value="60" min="0" max="300" step="5" inputmode="decimal"><span class="cf-u">€/t</span></div><small>transport, składowanie lub spalanie</small></div></form>
+      <div class="calc-out" aria-live="polite">
+        <p class="eyebrow">Szacunkowe roczne oszczędności</p>
+        <div class="co-total"><b class="num" id="co-total">–</b><span>€ rocznie</span></div>
+        <dl class="co-list">
+          <div class="co-e"><dt>Zaoszczędzona energia</dt><dd><b class="num" id="co-mwh">–</b> MWh · <b class="num" id="co-eur-e">–</b> €</dd></div>
+          <div class="co-s"><dt>Brak kosztów unieszkodliwiania osadu</dt><dd><b class="num" id="co-t">–</b> t · <b class="num" id="co-eur-s">–</b> €</dd></div>
+          <div class="co-k"><dt>Zużycie energii z NOVETECH</dt><dd><b class="num" id="co-kwh">–</b> kWh/m³</dd></div>
+        </dl>
+        <p class="co-note">Obliczenie orientacyjne. Nie obejmuje kosztów inwestycyjnych, kosztów eksploatacji linii ani przychodów ze sprzedaży produktu. Zużycie energii technologii opiera się na parametrach technicznych typowych bloków modułowych dla podanej wydajności.</p>
+        <a class="btn btn-sky" href="kontakt.html">Poproś o dokładną kalkulację →</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <div class="next"><div class="wrap"><a href="investori.html"><span><small>Dalej</small><b>Dla inwestorów</b></span><span class="arr" aria-hidden="true">→</span></a></div></div>
 
@@ -127,7 +152,7 @@
     </div>
     <nav class="f-col" aria-label="Stopka">
       <h2>Strony</h2>
-      <a href="technologia.html">Technologia</a><a href="produkt.html">Produkt</a><a href="projekt.html">Projekt i skala</a><a href="investori.html">Inwestorzy</a><a href="kontakt.html">Kontakt</a>
+      <a href="technologia.html">Technologia</a><a href="produkt.html">Produkt</a><a href="projekt.html">Projekt i skala</a><a href="investori.html">Inwestorzy</a><a href="kontakt.html">Kontakt</a><a href="ochrana-osobnych-udajov.html">Polityka prywatności</a>
     </nav>
     <div class="f-col f-company">
       <h2>Operator</h2>

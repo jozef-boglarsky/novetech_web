@@ -11,6 +11,7 @@
     perday:{sk:' m³ za deň',en:' m³ per day',de:' m³ pro Tag',pl:' m³ na dobę'},
     err:{sk:'Vyplňte meno a platnú e-mailovú adresu.',en:'Please fill in your name and a valid e-mail address.',de:'Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse ein.',pl:'Proszę podać imię i nazwisko oraz poprawny adres e-mail.'},
     ok:{sk:'Otvorí sa váš e-mailový program s pripravenou správou. Ak sa neotvorí, napíšte na info@novetech.eu.',en:'Your e-mail app should open with the message ready. If it does not, write to info@novetech.eu.',de:'Ihr E-Mail-Programm öffnet sich mit der vorbereiteten Nachricht. Falls nicht, schreiben Sie an info@novetech.eu.',pl:'Otworzy się program pocztowy z przygotowaną wiadomością. Jeśli tak się nie stanie, prosimy pisać na info@novetech.eu.'},
+    consent:{sk:'Pred odoslaním potvrďte, že ste sa oboznámili s informáciami o spracúvaní osobných údajov.',en:'Before sending, please confirm that you have read the information on the processing of personal data.',de:'Bitte bestätigen Sie vor dem Senden, dass Sie die Datenschutzinformationen gelesen haben.',pl:'Przed wysłaniem prosimy potwierdzić zapoznanie się z informacjami o przetwarzaniu danych osobowych.'},
     name:{sk:'Meno: ',en:'Name: ',de:'Name: ',pl:'Imię i nazwisko: '},
     org:{sk:'Organizácia: ',en:'Organisation: ',de:'Organisation: ',pl:'Organizacja: '},
     role:{sk:'Záujem: ',en:'Interest: ',de:'Interesse: ',pl:'Zainteresowanie: '}
@@ -120,6 +121,7 @@
       if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)){
         msg.textContent=t('err');return;
       }
+      if(f.consent&&!f.consent.checked){msg.textContent=t('consent');return;}
       var body=t('name')+f.name.value+'\n'+t('org')+f.org.value+'\nE-mail: '+f.email.value+'\n'+t('role')+role+'\n\n'+f.message.value;
       window.location.href='mailto:info@novetech.eu?subject='+encodeURIComponent('NOVETECH – '+role)+'&body='+encodeURIComponent(body);
       msg.textContent=t('ok');
@@ -159,5 +161,26 @@
       var b=gt.querySelector('[data-count]'),n=0,t=+b.getAttribute('data-count');var iv=setInterval(function(){n++;b.textContent=n;if(n>=t)clearInterval(iv)},70);
       io.disconnect();}})},{threshold:.35});
     io.observe(gt);
+  }
+
+  /* ---------- savings calculator ---------- */
+  var cform=$('calc-form');
+  if(cform){
+    var kwhAt=function(c){var lc=Math.log10(Math.max(100,Math.min(1e6,c)));
+      for(var i=0;i<D.cap.length-1;i++){var a=Math.log10(D.cap[i]),b=Math.log10(D.cap[i+1]);
+        if(lc<=b){var t=(lc-a)/(b-a);return D.kwh[i]+t*(D.kwh[i+1]-D.kwh[i])}}
+      return D.kwh[D.kwh.length-1]};
+    var num=function(id){var v=parseFloat(String($(id).value).replace(',','.'));return isFinite(v)&&v>=0?v:0};
+    var calc=function(){
+      var cap=num('c-cap'),cur=num('c-cur'),pr=num('c-price'),sl=num('c-sludge'),dp=num('c-disp');
+      var nk=kwhAt(cap),mwh=Math.max(0,cap*365*(cur-nk)/1000),eE=mwh*1000*pr,eS=sl*dp;
+      $('co-kwh').textContent=fmt(nk,2);
+      $('co-mwh').textContent=fmt(Math.round(mwh),0);
+      $('co-eur-e').textContent=fmt(Math.round(eE),0);
+      $('co-t').textContent=fmt(Math.round(sl),0);
+      $('co-eur-s').textContent=fmt(Math.round(eS),0);
+      $('co-total').textContent=fmt(Math.round(eE+eS),0);
+    };
+    cform.addEventListener('input',calc);calc();
   }
 })();

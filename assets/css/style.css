@@ -1,3 +1,16 @@
+/* self-hosted fonts (no Google Fonts requests) */
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations'),url(../fonts/archivo-latin-wdth-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:500;src:url(../fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:600;src:url(../fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/ibm-plex-mono-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-display:swap;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations'),url(../fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/ibm-plex-sans-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:500;src:url(../fonts/ibm-plex-sans-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-display:swap;font-weight:600;src:url(../fonts/ibm-plex-sans-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/ibm-plex-mono-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-display:swap;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 /* Layout idea: the page reads like the reactor itself — a tall vertical column (the "shaft") runs down the left edge,
    each section is a stage the sludge passes through, ending in product and investment. */
 :root{
@@ -453,6 +466,17 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(-
 @media (max-width:880px){.slider-box{padding:20px}}
 @media (max-width:480px){.readout{grid-template-columns:1fr}}
 
+.hero-proof{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:9px 16px 9px 10px;border-radius:14px;max-width:36em;background:rgba(110,231,168,.10);border:1px solid rgba(110,231,168,.35);color:#DFF7EA;font-size:15px;font-weight:500}
+.hero-proof svg{width:20px;height:20px;flex:none}
+.hero .ctas{margin-top:24px}
+
+.vid-sec{padding:0 0 96px}
+.vid-head{margin-bottom:24px}
+.vid-head .eyebrow{color:var(--navy);margin-bottom:10px}
+.vid{width:100%;height:auto;border-radius:18px;background:var(--deep);box-shadow:0 30px 60px -30px rgba(6,22,34,.6);display:block}
+
+h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+
 /* ---------- nutrient cycle ---------- */
 .prod-grid>.bars{grid-row:1 / span 2}
 .prod-grid>.callout{align-self:start}
@@ -464,6 +488,62 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(-
 .cyc-flow{animation:cycdash 1.6s linear infinite}
 @keyframes cycdash{to{stroke-dashoffset:-24}}
 @media (prefers-reduced-motion:reduce){.cyc-flow{animation:none}}
+
+.cycle-mob{display:none}
+@media (max-width:700px){
+  .cycle-svg{display:none}
+  .cycle-mob{display:block;padding:4px 6px 12px}
+  .cm-stat{font-size:15px;color:var(--muted);margin:6px 0 14px}
+  .cm-stat b{font:900 30px var(--f-display);font-stretch:118%;color:var(--humus);margin-right:6px}
+  .cycle-list{list-style:none;margin:0;padding:0 0 0 0;position:relative}
+  .cycle-list::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;border-left:2.5px dashed #B8C8D3}
+  .cycle-list li{display:flex;align-items:center;gap:14px;padding:6px 0;position:relative}
+  .cycle-list svg{width:56px;height:56px;flex:none}
+  .cycle-list b{display:block;font-size:16px;color:var(--ink)}
+  .cycle-list small{font-size:14px;color:var(--muted)}
+  .cm-back{margin:8px 0 0 10px;font-size:14px;color:var(--humus);font-weight:600}
+}
+
+/* ---------- savings calculator ---------- */
+.calc{background:var(--white)}
+.calc-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;align-items:stretch}
+.calc-form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;align-content:start}
+.cf{display:flex;flex-direction:column;gap:6px}
+.cf:first-child{grid-column:1/-1}
+.cf label{font-weight:600;font-size:15px;color:var(--ink)}
+.cf-in{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:12px;background:var(--mist);overflow:hidden;transition:border-color .15s}
+.cf-in:focus-within{border-color:var(--navy)}
+.cf-in input{flex:1;min-width:0;border:0;background:transparent;font:600 18px var(--f-body);color:var(--navy);padding:12px 14px;font-variant-numeric:tabular-nums}
+.cf-in input:focus{outline:none}
+.cf-u{font:500 13px var(--f-mono);color:var(--muted);padding:0 14px;white-space:nowrap}
+.cf small{font-size:13px;color:var(--muted)}
+.calc-out{background:var(--deep);color:var(--white);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden}
+.calc-out::before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(closest-side,rgba(110,231,168,.22),transparent)}
+.calc-out .eyebrow{color:var(--green)}
+.co-total{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;position:relative}
+.co-total b{font:900 clamp(40px,5vw,64px)/1 var(--f-display);font-stretch:118%;color:var(--green)}
+.co-total span{font:500 15px var(--f-mono);color:#CFE3F0}
+.co-list{display:grid;gap:10px;margin:0;position:relative}
+.co-list div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.05);border-left:3px solid var(--c)}
+.co-e{--c:var(--sky)}.co-s{--c:var(--amber)}.co-k{--c:var(--green)}
+.co-list dt{font-size:14px;color:#AFCADB}
+.co-list dd{margin:0;font-size:15px;color:var(--white);text-align:right}
+.co-note{font-size:13px;color:#8FB2C8;position:relative}
+.calc-out .btn{align-self:flex-start;position:relative}
+@media (max-width:900px){.calc-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.calc-form{grid-template-columns:1fr}.co-list div{flex-direction:column;align-items:flex-start}.co-list dd{text-align:left}}
+
+/* ---------- privacy page + consent ---------- */
+.pp{background:var(--white)}
+.pp-body{max-width:760px}
+.pp-sec{padding:26px 0;border-bottom:1px solid var(--line)}
+.pp-sec h2{font-size:22px;font-stretch:108%;color:var(--navy);margin-bottom:10px}
+.pp-sec p{color:var(--ink);margin-top:8px}
+.pp-date{margin-top:24px;color:var(--muted);font-size:14px}
+.pp section{padding:26px 0}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);line-height:1.5;cursor:pointer}
+.consent input{width:18px;height:18px;margin-top:2px;accent-color:var(--navy);flex:none}
+.consent a{color:var(--navy)}
 
 /* ---------- process flow ---------- */
 .flowbox{margin-top:20px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 28px 22px}
@@ -497,7 +577,10 @@ input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(-
 @media (prefers-reduced-motion:reduce){.bub{display:none}}
 .hero>.wrap{grid-template-columns:1fr 1.1fr}
 .hero-ill{margin:-24px -60px -24px -40px}
-.hero-ill svg{width:118%;max-width:none;margin-left:-6%}
+.hero-ill svg{width:118%;max-width:none;margin-left:-6%;filter:drop-shadow(0 28px 36px rgba(0,0,0,.45))}
+.hero-ill{position:relative}
+.hero-ill::before{content:"";position:absolute;left:-4%;right:-14%;top:2%;bottom:6%;background:radial-gradient(closest-side,rgba(157,220,255,.20),rgba(157,220,255,.06) 60%,transparent);pointer-events:none}
+.hero-ill svg,.hero-ill figcaption{position:relative}
 @media (max-width:880px){.hero>.wrap{grid-template-columns:1fr}.hero-ill{margin:0 -8px}.hero-ill svg{width:100%;margin:0}}
 .hero-ill figcaption{font:400 12px/1.4 var(--f-mono);color:#8FB2C8;margin-top:6px}
 .site-ill{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px 20px 8px;overflow:hidden}
